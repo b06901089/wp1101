@@ -1,0 +1,208 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    /* background-color: #b3c5d9; */
+    background-image: url("https://images.pexels.com/photos/844297/pexels-photo-844297.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    /* background-image: url("    https://images.pexels.com/photos/133953/pexels-photo-133953.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"); */
+    /* opacity: 0.6; */
+}
+
+/* This will force the browser to include padding and border in its calculation of an elements total width and height. */
+
+/* .object-fit-cover-fullsize {
+
+    object-fit: cover;
+    max-width: 300px;
+    max-height: 300px;
+
+    border: 1px #aaaaaa solid;
+    display: none;
+    position: relative;
+    margin: 15px;
+} */
+
+.object-fit-cover {
+    /* width: 100%;
+    height: 100%; */
+    object-fit: cover;
+    width: 110px;
+    height: 110px;
+    border: 5px solid rgba(0, 0, 0, 0.1);
+}
+
+.object-fit-cover-select {
+    /* width: 100%;
+    height: 100%; */
+    object-fit: cover;
+    width: 110px;
+    height: 110px;
+    border: 5px solid #7395ae;
+}
+
+.object-fit-cover:hover {
+    transform: scale(1.1);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
+    border: 5px solid #938e94;
+    cursor: pointer;
+}
+
+.object-fit-cover-select:hover {
+    transform: scale(1.1);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
+    border: 5px solid #557a95;
+    cursor: pointer;
+}
+
+.object-fit-cover-gal {
+    object-fit: cover;
+    width: 140px;
+    height: 140px;
+    border-radius: 25px;
+}
+
+.object-fit-cover-gal:hover {
+    transform: scale(1.1);
+    /* box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8); */
+    border: 1px solid #938e94;
+    cursor: pointer;
+}
+
+/* .object-fit-cover-gal-select {
+    object-fit: cover;
+    width: 140px;
+    height: 140px;
+    border-radius: 25px;
+} */
+
+div.gallery-item {
+    margin: 15px;
+    display: inline-block;
+}
+
+div.gallery-item-container {
+    white-space: nowrap;
+    overflow-x: scroll;
+    /* scroll-behavior: smooth; */
+}
+
+input.gallery-selector:checked ~ img.object-fit-cover-fullsize{
+    display: block;
+}
+
+input.gallery-selector {
+	display: none;
+}
+
+.gallery-label {
+    cursor: pointer;
+}
+
+.Big-picture-frame {
+    margin: 20px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    height: 610px;
+
+    border: 3px solid #7395ae;
+    padding: 3px;
+
+    border-radius: 25px;
+
+    /* background-clip: content-box;
+    box-shadow: inset 0 0 0 3px lightGreen; */
+}
+
+.Big-picture{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+    max-height: 560px;
+
+}
+
+.gallery {
+    /* height: 100%; */
+    width: 85%;
+    float: right;
+    /* background-color: #b3c5d9; */
+}
+
+/* gallery collection part */
+
+.gallery-collection {
+    float: left;
+    height: 100vh;
+    overflow-y: auto;
+    /* background-color: #557a95; */
+}
+
+.collection {
+    border: 3px solid #7395ae;
+    border-radius: 25px;
+    padding: 5px;
+    margin: 20px;
+    background-color: #7395ae;
+    position: relative;
+    /* overflow: auto; */
+    /* float: left; */
+}
+
+h6 {
+    text-align: center;
+    margin: 3px;
+    background-color: #b1a296;
+    border-radius: 25px;
+}
+
+h3 {
+    text-align: center;
+    margin: 3px;
+    background-color: #b1a296;
+    border-radius: 25px;
+}
+
+.checkmark {
+    display: none;
+    width: 22px;
+    height: 22px;
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+    transform: rotate(45deg);
+
+    position: absolute;
+    bottom: 50px;
+    left: 10px;
+
+}
+
+.checkmark_circle {
+    position: absolute;
+    width:22px;
+    height:22px;
+    background-color: green;
+    border-radius:11px;
+    left:0;
+    top:0;
+}
+
+.checkmark_stem {
+    position: absolute;
+    width:3px;
+    height:9px;
+    background-color:#fff;
+    left:11px;
+    top:6px;
+}
+
+.checkmark_kick {
+    position: absolute;
+    width:3px;
+    height:3px;
+    background-color:#fff;
+    left:8px;
+    top:12px;
+}

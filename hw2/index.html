@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Photo Album</title>
+    <link
+        rel="stylesheet"
+        type="text/css"
+        media="screen"
+        href="styles.css"
+    />
+</head>
+<body>
+    <section class="gallery" id="gallery0">
+        <div class="gallery-item-container">
+            <div class="gallery-item">
+                <img class="object-fit-cover" id="ref1" alt="ref1" onclick="clickPicture(this);"/>
+            </div>
+
+            <div class="gallery-item">
+                <img class="object-fit-cover" id="ref2" alt="ref2" onclick="clickPicture(this);"/>
+            </div>
+
+            <div class="gallery-item">
+                <img class="object-fit-cover" id="ref3" alt="ref3" onclick="clickPicture(this);"/>
+            </div>
+
+            <div class="gallery-item">
+                <img class="object-fit-cover" id="ref4" alt="ref4" onclick="clickPicture(this);"/>
+            </div>
+
+            <div class="gallery-item">
+                <img class="object-fit-cover" id="ref5" alt="ref5" onclick="clickPicture(this);"/>
+            </div>
+
+            <div class="gallery-item">
+                <img class="object-fit-cover" id="ref6" alt="ref6" onclick="clickPicture(this);"/>
+            </div>
+        </div>
+
+        <div class="Big-picture-frame">
+            <img class="Big-picture" id="big-pic"/>
+            <h6 id="Selected_pic"> Selected Picture : </h6>
+            <h6 id="Selected_gal"> Selected Album : </h6>
+        </div>
+
+        <button onclick="NewPicture();">New Picture</button>
+        <button onclick="DeletePicture()">Delete Picture</button>
+        <button onclick="NewAlbum();">New Album</button>
+        <button onclick="DeleteAlbum()">Delete Album</button>
+
+    </section>
+
+    <section class="gallery-collection">
+
+        <h3> Albums </h3>
+        <h3 id="total_photos"> photos </h3>
+
+        <div class="collection">
+            <img class="object-fit-cover-gal" id="gal1" alt="gal1" onclick="clickCollection(this);"/>
+            <span class="checkmark">
+                <div class="checkmark_circle"></div>
+                <div class="checkmark_stem"></div>
+                <div class="checkmark_kick"></div>
+            </span>
+            <h6> Album 1 </h6>
+            <h6> pic_number : </h6>
+        </div>
+
+        <div class="collection">
+            <img class="object-fit-cover-gal" id="gal2" alt="gal2" onclick="clickCollection(this);"/>
+            <span class="checkmark">
+                <div class="checkmark_circle"></div>
+                <div class="checkmark_stem"></div>
+                <div class="checkmark_kick"></div>
+            </span>
+            <h6> Album 2 </h6>
+            <h6> pic_number : </h6>
+        </div>
+
+        <div class="collection">
+            <img class="object-fit-cover-gal" id="gal3" alt="gal3" onclick="clickCollection(this);"/>
+            <span class="checkmark">
+                <div class="checkmark_circle"></div>
+                <div class="checkmark_stem"></div>
+                <div class="checkmark_kick"></div>
+            </span>
+            <h6> Album 3 </h6>
+            <h6> pic_number : </h6>
+        </div>
+
+        <div class="collection">
+            <img class="object-fit-cover-gal" id="gal4" alt="gal4" onclick="clickCollection(this);"/>
+            <span class="checkmark">
+                <div class="checkmark_circle"></div>
+                <div class="checkmark_stem"></div>
+                <div class="checkmark_kick"></div>
+            </span>
+            <h6> Album 4 </h6>
+            <h6> pic_number : </h6>
+        </div>
+
+        <div class="collection">
+            <img class="object-fit-cover-gal" id="gal5" alt="gal5" onclick="clickCollection(this);"/>
+            <span class="checkmark">
+                <div class="checkmark_circle"></div>
+                <div class="checkmark_stem"></div>
+                <div class="checkmark_kick"></div>
+            </span>
+            <h6> Album 5 </h6>
+            <h6> pic_number : </h6>
+        </div>
+
+    </section>
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>
