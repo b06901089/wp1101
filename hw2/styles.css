@@ -59,7 +59,10 @@ html {
     object-fit: cover;
     width: 140px;
     height: 140px;
+    max-width: 100%;
+    max-height: 80%;
     border-radius: 25px;
+    text-align: center;
 }
 
 .object-fit-cover-gal:hover {
@@ -121,7 +124,6 @@ input.gallery-selector {
     margin-right: auto;
     max-width: 1200px;
     max-height: 560px;
-
 }
 
 .gallery {
@@ -135,6 +137,7 @@ input.gallery-selector {
 
 .gallery-collection {
     float: left;
+    width: 15%;
     height: 100vh;
     overflow-y: auto;
     /* background-color: #557a95; */
@@ -147,6 +150,8 @@ input.gallery-selector {
     margin: 20px;
     background-color: #7395ae;
     position: relative;
+    max-width: 80%;
+    max-height: 30%;
     /* overflow: auto; */
     /* float: left; */
 }
