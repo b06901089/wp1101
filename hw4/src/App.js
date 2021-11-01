@@ -36,20 +36,21 @@ class Todolist extends Component {
         else count_complete++;
     }
 
-    this.setState({todo_count: count});
     var total = document.querySelector(".todo-app__total");
-    total.innerHTML = this.state.todo_count.toString() + " left";
 
-    if (count_complete !== 0) document.querySelector(".todo-app__clean").style.visibility = "visible";
-    else document.querySelector(".todo-app__clean").style.visibility = "hidden";
+    this.setState({todo_count: count}, () => {
+      total.innerHTML = this.state.todo_count.toString() + " left";
+      if (count_complete !== 0) document.querySelector(".todo-app__clean").style.visibility = "visible";
+      else document.querySelector(".todo-app__clean").style.visibility = "hidden";
+    });
   }
 
   check_footer_hide = () => {
     if(this.state.display_items.length !== 0) {
-      this.setState(state => ({hide: false}));
+      this.setState(state => ({hide: false}), () => {this.ckeck_todo_count()});
     }
     else {
-      this.setState(state => ({hide: true}));
+      this.setState(state => ({hide: true}), () => {this.ckeck_todo_count()});
     }
   }
 
@@ -64,7 +65,7 @@ class Todolist extends Component {
 
         <section className="todo-app__main">
           <Todo_app__input onInputChange={this.handleInputChange} onAddTodo={this.handleAddTodo}></Todo_app__input>
-          <Todo_app__list display_items={this.state.display_items}></Todo_app__list>
+          <Todo_app__list display_items={this.state.display_items} ckeck_todo_count={this.ckeck_todo_count}></Todo_app__list>
         </section>
 
         <Todo_app__footer display_items={this.state.display_items} hide={this.state.hide}></Todo_app__footer>

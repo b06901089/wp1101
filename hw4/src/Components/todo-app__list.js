@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import logo from '../img/x.png';
 
 class Todo_app__list extends Component {
 
@@ -13,6 +14,7 @@ class Todo_app__list extends Component {
                 items[i].style = "text-decoration: none; opacity: 1;"
             }
         }
+        this.props.ckeck_todo_count();
     }
 
     render() {
@@ -25,7 +27,7 @@ class Todo_app__list extends Component {
                             <label htmlFor={e[0]}></label>
                         </div>
                         <h1 className="todo-app__item-detail">{e[1]}</h1>
-                        <img className="todo-app__item-x" src="./../../img/x.png" alt="x"></img>
+                        <img className="todo-app__item-x" src={logo} alt="x"></img>
                     </li>                   
                 )}    
             </ul>

@@ -23,7 +23,6 @@ class Todo_app__footer extends Component {
         return (
             <footer className="todo-app__footer" id="todo-footer" style={(this.props.hide) ? footer_style : footer_style_show}>
                 <div className="todo-app__total">
-
                 </div>
                 <ul className="todo-app__view-buttons">
                     <button>ALL</button>
