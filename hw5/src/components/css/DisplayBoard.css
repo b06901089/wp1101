@@ -1,0 +1,9 @@
+.displayboard {
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 3vmin;
+    font-family: "Farfetch Basis","Helvetica Neue",Arial,sans-serif;
+    padding: 12.5% 20px 12.5% 20px;
+    position: relative;
+    height: 45vh;
+}

@@ -1,3 +1,48 @@
+##### hw5 Readme #####
+
+1. app reference : ios default calculator
+
+2. Possible special rules for this calculator(?)
+
+    (a) If you press '1' '+' '2', then you press '+' '-' '*' '/' again, the result '3' will be automatically calculate. 
+        (same as ios)
+
+    (b) After a calculation (ex : after pressing equal), if you then press another number, the number will add to the last of the already existing number. 
+        (ex : press '1' '+' '2' '=' '5', the result should be '35')
+        (unlike ios, the result should be '5' for ios)
+        (if you need a new calculation, just press 'C' instead)
+
+    (c) For the display part, it will always display to precision 12. However, the function like dot('.') will still work as usual. No worries.
+
+    (4) If you press '=' consecutively, it will automatically execute the last operation.
+        (ex : press '1' '+' '2' '=' '=', the result should be '5')
+        (ex : press '1' '+' '2' '=' '5' '=', the result should be '37')
+        (same as ios)
+
+    (5) Doesn't support 先乘除後加減.
+    
+    (6) Divide by 0 will prompt alert. The calculator will then simply ignore the operation.
+
+3. 進階要求
+
+    (a) 錯誤修正 : AC/C
+
+    (b) Support 'MR' 'MC' 'M+' 'M-'
+
+    (c) Support scientific notation
+
+    (d) Support x^2, e^x, ln(x)
+
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

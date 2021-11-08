@@ -20,7 +20,7 @@ export default function Modal({restartGame, backToHome, win}){
     return (
         // {/* -- TODO 5-1 -- */}
         /* Useful Hint: style = {{opacity: 1 or 0 }} */
-        <div className="modal" style={{opacity: (win) ? 1 : 0 }}>
+        <div className="modal">
             <div className="modalWrapper"></div>
             <div className="modalContent">
                 { (win) ? (<div className="modalResult">WIN</div>) : (<div className="modalResult">GAME OVER</div>)}

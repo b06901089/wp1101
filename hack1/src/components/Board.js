@@ -107,7 +107,7 @@ const Board = ({ boardSize, mineNum, backToHome }) => {
 
     return(
         <div className = 'boardPage' >
-            {/* <Modal restartGame={restartGame} backToHome={backToHome} win={win}></Modal> */}
+            <Modal restartGame={restartGame} backToHome={backToHome} win={win}></Modal>
             <div className = 'boardWrapper' >            
             {/* -- TODO 3-1 -- */}
             {/* Useful Hint: The board is composed of BOARDSIZE*BOARDSIZE of Cell (2-dimention). So, nested 'map' is needed to implement the board.  */}
