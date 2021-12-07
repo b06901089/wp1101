@@ -48,7 +48,7 @@ router.get('/postDetail', async (req, res) => {
     else {
         res.status(200).send({
             "message": "success",
-            "post": Post
+            "post": result
         })
     }
 })

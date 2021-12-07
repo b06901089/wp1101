@@ -13,11 +13,7 @@ function Board(props) {
   useEffect( async () => {
     const { data: { message, data:dataa }, } = await instance.get('/allPosts');
     console.log(dataa);
-    setPosts([...posts, ...dataa]);
-    console.log(posts);
-    posts.map((post, i) =>{
-      console.log(i);
-    })
+    setPosts(dataa);
   }, [])
   
   return (
