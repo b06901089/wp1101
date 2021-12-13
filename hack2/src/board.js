@@ -12,7 +12,7 @@ function Board(props) {
   // TODO 2-(2): fetch all posts from database
   useEffect( async () => {
     const { data: { message, data:dataa }, } = await instance.get('/allPosts');
-    console.log(dataa);
+    // console.log(dataa);
     setPosts(dataa);
   }, [])
   
