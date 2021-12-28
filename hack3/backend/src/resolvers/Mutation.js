@@ -42,7 +42,7 @@ const Mutation = {
         { id },
       );
       pubSub.publish("TASK_DELETED", {
-        taskDeleted: oldtask,
+        taskDeleted: id,
       });
       return id;
     } catch (e) {

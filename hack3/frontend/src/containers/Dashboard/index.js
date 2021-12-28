@@ -87,7 +87,10 @@ export default function Dashboard() {
         } = subscriptionData;
         return {
           tasks: prev.tasks.map((task) => {
-            if (task.id !== taskDeleted) return task;
+            if (task.id !== taskDeleted) {
+              console.log(task.id);
+              return task;
+            }
           }),
         };
       },
