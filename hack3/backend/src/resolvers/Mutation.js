@@ -35,9 +35,15 @@ const Mutation = {
   // TODO 5.2 Add a deleteTask function to resolve deleteTask
   deleteTask: async (parent, { id }, { taskModel, pubSub }) => {
     try {
+      const oldtask = await taskModel.findOne(
+        { id },
+      );
       await taskModel.deleteOne(
         { id },
       );
+      pubSub.publish("TASK_DELETED", {
+        taskDeleted: oldtask,
+      });
       return id;
     } catch (e) {
       console.error("deleteTask DB error: ", e);
