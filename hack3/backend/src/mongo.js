@@ -25,9 +25,9 @@ async function connect() {
 
   db.once("open", () => {
       console.log("Mongo database connected!");
+      dataInit();
   });
     
-  dataInit();
 }
 
 
