@@ -1,0 +1,32 @@
+{
+  "name": "modern-graphql-tutorial",
+  "version": "1.0.0",
+  "description": "After this tutorial, you will be able to:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cd frontend/ && npm start",
+    "server": "cd backend/ && npm run start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ian13456/modern-graphql-tutorial.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ian13456/modern-graphql-tutorial/issues"
+  },
+  "homepage": "https://github.com/ian13456/modern-graphql-tutorial#readme",
+  "dependencies": {
+    "@apollo/client": "^3.5.6",
+    "@apollo/react-hooks": "^4.0.0",
+    "apollo-link-ws": "^1.0.20",
+    "dotenv-defaults": "^3.0.0",
+    "graphql": "^16.2.0",
+    "mongoose": "^6.1.3",
+    "react-apollo": "^3.1.5",
+    "subscriptions-transport-ws": "^0.11.0"
+  }
+}
